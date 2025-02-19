@@ -1,0 +1,459 @@
+#Body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#custom-file-upload {
+  font-family: "Tilt Neon", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  border: 1px solid #ccc;
+  border-radius: 16px;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+#CHAT {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+#SideMenuDiv {
+  padding-left: 1%;
+  width: fit-content;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+#SideMenu {
+  width: 17vw;
+  height: 90%;
+  border-radius: 32px;
+  background-color: rgb(48, 48, 48);
+}
+
+#ChatArea {
+  height: 100vh;
+  display: block;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: normal;
+}
+
+/* CHAT STYLES */
+
+#sectionChat {
+  width: 95%;
+  height: 90%;
+  border-radius: 32px;
+  background-color: rgb(255, 255, 255);
+}
+
+#HeaderChatArea {
+  width: 100%;
+  height: 10%;
+  padding-top: 1%;
+  background-color: rgb(48, 48, 48);
+  border-bottom: 2px black solid;
+  border-radius: 28px 28px 0px 0px;
+}
+
+#ChatSection {
+  box-shadow: inset -2px 12px 21px -7px rgba(0, 0, 0, 0.75);
+  width: 100%;
+  height: 88%;
+  border-radius: 0px 0px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: normal;
+}
+
+#ChatOutIN {
+  box-shadow: 16px 17px 21px -7px rgba(0, 0, 0, 0.75);
+  width: 80%;
+  height: 70%;
+  background-color: rgb(27, 27, 27);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: normal;
+}
+
+#InputsOutputs {
+  width: 95%;
+  height: 90%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+#InputArea {
+  box-shadow: -2px 12px 21px -7px rgba(0, 0, 0, 0.75);
+  width: 80%;
+  height: 10%;
+  background-color: rgb(73, 73, 73);
+  border-radius: 1vw;
+  margin-top: 26px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: normal;
+  transition: all 200ms linear;
+}
+
+#InputArea:hover {
+  box-shadow: 2px 25px 14px -24px rgb(128, 236, 255);
+}
+
+/* -------------------- */
+
+/* GENERAL STYLE - TEXT */
+#LogoTitleHeader {
+  width: 50%;
+  height: 10%;
+  color: white;
+  font-family: "Tilt Neon", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  height: fit-content;
+  font-size: 5vh;
+  margin-left: 1%;
+  padding-top: 1%;
+}
+
+#LogoTitleHeader > h1 {
+  all: unset;
+}
+
+#Icon {
+  width: auto;
+  height: 4vh;
+}
+/* -------------------- */
+/* SIDE MENU */
+
+#LogoTitleAside {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 16px;
+  font-family: "Tilt Neon", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  height: fit-content;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 3.5vh;
+  color: white;
+}
+
+#HVicon {
+  height: 3vw;
+}
+
+#AboutAcount {
+  width: 100%;
+  height: 34vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#AbCSec {
+  width: 90%;
+  height: 90%;
+  background-color: rgb(32, 32, 32);
+  border-radius: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+#userFrame {
+  width: 50%;
+  height: 50%;
+  background-color: rgb(15, 15, 15);
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  background-size: 'cover';
+  background-position: "center";
+}
+
+#LogOutDiv {
+  position: absolute;
+  color: white;
+  font-family: "Tilt Neon", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0vw;
+  width: 7.5%;
+  height: 15%;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  background-color: rgb(61, 61, 61, 0);
+  transition: all 100ms ease-in;
+}
+
+#LogOutDiv:hover {
+  font-size: 1vw;
+  position: absolute;
+  cursor: pointer;
+  width: 7.5%;
+  height: 15%;
+  background-color: rgba(37, 0, 0, 0.39);
+}
+
+#LogOutDiv > h1 {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+#AbCSec > span {
+  margin-top: 10%;
+  color: white;
+  font-family: "Tilt Neon", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  height: fit-content;
+  font-size: 1.5vw;
+}
+
+#NavHistory {
+  color: white;
+  font-family: "Tilt Neon", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5vw;
+  height: fit-content;
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+#NavHistory > h1 {
+  margin-block-end: 0;
+  margin-block-start: 0;
+}
+
+#history {
+  width: 90%;
+  height: 93%;
+  background-color: rgb(15, 15, 15);
+  border-radius: 32px;
+}
+
+#INOUTAREA {
+  width: 96%;
+  height: 95%;
+  overflow: auto;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+}
+
+.placeholder {
+  transition: all 100ms ease-out;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Tilt Neon", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5vw;
+}
+
+#BalaoMsg {
+  width: fit-content;
+  max-width: 40%;
+  height: fit-content;
+  padding: 1%;
+  border-radius: 16px;
+  color: white;
+  background-color: rgb(68, 68, 68);
+  font-family: Arial;
+  font-weight: 400;
+  font-style: normal;
+}
+#TextBOX {
+  width: 100%;
+  height: 100%;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+#PRESP {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+}
+
+/*
+ *  STYLE 2
+ */
+
+#INOUTAREA::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+#INOUTAREA:-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
+}
+
+#INOUTAREA::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #d62929;
+}
+
+/* From Uiverse.io by Shoh2008 */
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 50px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+
+.Loading-visible {
+  transition: all 100ms ease-out;
+  visibility: visible;
+}
+.Loading-hidden {
+  transition: all 100ms ease-out;
+  display: none;
+}
+
+#NomeUSSESR{
+  color: white;
+  font-family: "Tilt Neon", serif;
+  font-optical-sizing: auto;
+  font-weight:  500;
+  font-style: normal;
+  font-size: 5em;
+}

@@ -1,0 +1,254 @@
+
+input{
+  all: unset;
+}
+
+#body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: stretch;
+}
+
+#lgDiv{
+  width: 30dvw;
+  margin-right: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginForm{
+  background-color: rgb(24, 24, 24);
+  min-width: 26dvw;
+  height: 33dvh;
+  padding: 2%;
+  font-family: "Comfortaa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.678) 0px 15px 12px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch; 
+}
+
+#FormLogin{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+}
+
+.spans{
+  margin-bottom: 2%;
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  height: fit-content;
+  border-radius: 20px;
+  transition: all .3s;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+input{
+  color: white; 
+  border-radius: 15px;
+  width: 100%;
+  background-color: transparent;
+  margin: 0;
+  padding-left: 1vw;
+  transition: all .2s;
+  
+}
+
+input:autofill {
+  background-color: #2a2a2a;
+  color: #fff;
+};
+
+.LoginForm > h1{
+  font-family: "Red Hat Display", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 336;
+  font-style: normal;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.spans {
+  width: 15vw;
+  height: 5dvh; 
+  background-image: linear-gradient(163deg, #0cb3df 0%, #04eeff 100%);
+  border-radius: 20px;
+  transition: all .3s;
+ }
+ 
+ .Lin {
+  width: 15vw;
+  height: 5dvh; 
+  background-color: #292929;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  transition: all .2s;
+ }
+ 
+ .Lin:hover{
+  transform: scale(0.98);
+  border-radius: 20px;
+ }
+ 
+ .spans:hover {
+  box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+ }
+
+ .Icon{
+  margin-left: 5%;
+ }
+
+ #btApp {
+  font-weight: bold;
+  color: white;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  max-width: 3.5vw;
+  height: 4vh;
+  border: none;
+  transition:all  1s ease-in;
+  background-color: #313131;
+  display: flex;
+  justify-content: center;
+  border: 2px solid transparent;
+  align-items: center;
+  min-width: 7vw;
+}
+
+
+#btApp:hover{
+  background: linear-gradient(#000000, #212121) padding-box,
+  linear-gradient(145deg, transparent 36%,#0cb3df, #40c9ff) border-box;
+}
+
+#btApp:active{
+   box-shadow: #04eeff;
+}
+
+#btApp .span-mother {
+  display: flex;
+  overflow: hidden;
+}
+
+
+#btApp:hover .span-mother {
+  position: absolute;
+}
+
+#btApp:hover .span-mother span {
+  transform: translateY(1.2em);
+}
+
+#btApp .span-mother span:nth-child(1) {
+  transition: 0.2s;
+}
+
+#btApp .span-mother span:nth-child(2) {
+  transition: 0.3s;
+}
+
+#btApp .span-mother span:nth-child(3) {
+  transition: 0.4s;
+}
+
+#btApp .span-mother span:nth-child(4) {
+  transition: 0.5s;
+}
+
+#btApp .span-mother span:nth-child(5) {
+  transition: 0.6s;
+}
+
+#btApp .span-mother span:nth-child(6) {
+  transition: 0.7s;
+}
+
+#btApp .span-mother2 {
+  display: flex;
+  position: absolute;
+  overflow: hidden;
+}
+
+#btApp .span-mother2 span {
+  transform: translateY(-1.2em);
+}
+
+#btApp:hover .span-mother2 span {
+  transform: translateY(0);
+  color: #04eeff;
+}
+
+#btApp .span-mother2 span {
+  transition: 0.2s;
+}
+
+#btApp .span-mother2 span:nth-child(2) {
+  transition: 0.3s;
+}
+
+#btApp .span-mother2 span:nth-child(3) {
+  transition: 0.4s;
+}
+
+#btApp .span-mother2 span:nth-child(4) {
+  transition: 0.5s;
+}
+
+#btApp .span-mother2 span:nth-child(5) {
+  transition: 0.6s;
+}
+
+#btApp .span-mother2 span:nth-child(6) {
+  transition: 0.7s;
+}
+
+#callBacks{
+  width: 100%;
+  height: 20%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#callBacks > a {
+  color: #747474;
+  transition: all 0.5s ease-out;
+}
+
+#callBacks > a:hover{
+  color: #40c9ff;
+}
+
+
+
+#linha{
+  margin-top: 3%;
+  width: 100%;
+}

@@ -1,0 +1,187 @@
+body {
+    background-color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: normal;
+    align-content: normal;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(36, 131, 146);
+    background: linear-gradient(
+      330deg,
+      rgba(27, 45, 97, 1) 0%,
+      rgba(22, 183, 208, 1) 51%,
+      rgba(0, 99, 255, 1) 100%
+    );
+  }
+  
+  #PainelPrincipal{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: normal;
+  }
+  
+  
+  #divpainel{
+      background-color: rgb(29, 29, 29);
+      width: 500px;
+      height: fit-content ;
+      padding-bottom: 20px;
+      color: white;
+      font-family: "Tilt Neon", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      border-radius: 16px;
+      
+  }
+  #divpainel > h3{
+      width: 100%;
+      margin-block-end: 0.1vw;
+      text-align: center;
+      font-size: 2rem;
+      color: white;
+      font-family: "Tilt Neon", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+  }
+  
+  #voltalink{
+    width: 100%;
+  }
+
+  #divpainel > hr{
+      border-radius: 1%;
+      width: 80%;
+  }
+  
+  .coolinput {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 80%;
+      width: fit-content;
+      position: static;
+    }
+    
+    .coolinput label.text {
+      font-size: 0.75rem;
+      color: #81d2f8;
+      font-weight: 700;
+      position: relative;
+      top: 0.5rem;
+      margin: 0 0 0 7px;
+      padding: 0 3px;
+      background: rgb(29, 29, 29);;
+      width: fit-content;
+    }
+    
+    .coolinput input.input {
+      padding: 11px 10px;
+      font-size: 0.75rem;
+      width: 300px;
+      height: 30px;
+      border: 2px #81d2f8 solid;
+      border-radius: 5px;
+      background: #e8e8e800;
+      transition: all 100ms ease-in;
+      color: white;
+    }
+    
+    .coolinput input.input:focus {
+      outline: none;
+    }
+  
+    #InputArea{
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      align-content: normal;
+    }
+  
+  /* From Uiverse.io by nikk7007 */ 
+  .button {
+    --color: #81d2f8  ;
+    padding: 0.8em 1.7em;
+    margin-top: 5%;
+    width: 100%;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    font-size: 17px;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+   }
+   
+   .button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color);
+    transition: 1s ease;
+   }
+   
+   .button::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .button:hover {
+    color: rgb(10, 25, 30);
+   }
+   
+   .button:active {
+    filter: brightness(.8);
+   }
+   
+   /* ANIMAÇÂO Pos login sucessido */
+
+   #AnimacaoID::before{
+      content: "<div></div>";
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      border-radius: 16px;
+      position: relative;
+      background: rgb(255, 0, 0);;
+   }
+
+   #noneID{
+    display: none;
+   }
